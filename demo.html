@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Custom List Box Demo</title>
+		<meta name="description" content="" />
+		<meta name="author" content="ayu" />
+	    <link rel="Stylesheet" type="text/css" href="customlistbox.css" />
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Custom List Box Demo</h1>
+			</header>
+			<article>
+				<h3>The single select</h3>
+				<select id="singleSelect" style="width: 320px;">
+	                <option>aaaaaaaaaaaaaa</option>
+	                <option>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</option>
+	                <option>ccccccccccccccccccccccccccccccc</option>
+	                <option>dddddddddddddddddddddd</option>
+	                <option>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</option>
+	                <option>ffffffffffffffffffffffffffffffff</option>
+	            </select>
+				<h3>The multiple select, max count is 3</h3>
+				<select id="multipleSelect" data-maxSelectedCount="3" multiple="multiple" style="width: 320px;">
+	                <option>aaaaaaaaaaaaaa</option>
+	                <option selected="selected">bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</option>
+	                <option selected="selected">ccccccccccccccccccccccccccccccc</option>
+	                <option selected="selected">dddddddddddddddddddddd</option>
+	                <option selected="selected">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</option>
+	                <option selected="selected">ffffffffffffffffffffffffffffffff</option>
+	            </select>
+
+        	</article>
+			<footer>
+				<p>
+					&copy; Copyright  by ayu
+				</p>
+			</footer>
+		</div>
+
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="jquery.customlistbox.js"></script>
+	    <script type="text/javascript">
+	    	$('#multipleSelect, #singleSelect').customSelectBox();
+	    </script>
+	</body>
+	</body>
+</html>

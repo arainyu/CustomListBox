@@ -1,0 +1,60 @@
+body{
+    font: 13px/18px Thomaha;
+}
+
+a{
+    text-decoration: none;
+}
+
+.customMutipleSelectBox{
+    width: 320px;
+}
+
+        .customMutipleSelectBox ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .customMutipleSelectBox li
+        {
+            width: 100%;
+        }
+
+        .customMutipleSelectBox a
+        {
+            color: #333;
+            padding-left: 20px;
+            background: url('images/pm-sbox.png') no-repeat 0 -28px;
+            line-height: 15px;
+            height: 15px;
+            margin: 5px 10px;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+            .customMutipleSelectBox a:hover
+            {
+                text-decoration: none;
+                background-position:0 -42px;
+            }
+
+            .customMutipleSelectBox a.disabled, .customMutipleSelectBox .disabled a
+            {
+                background-position:0 -56px;
+            }
+
+            .customMutipleSelectBox a.selected
+            {
+                background-position:0 0px;
+            }
+
+                .customMutipleSelectBox a.selected:hover
+                {
+                    background-position:0 -14px;
+                }
